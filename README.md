@@ -8,3 +8,6 @@ Funkcjonalności:
 - Logowanie zdarzeń: integracja z zewnętrzną biblioteką logowania (zrealizowaną w poprzednim projekcie), dokumentującą start, wykonanie i zakończenie zadań.
 - Zegary interwałowe: precyzyjne odmierzanie czasu oparte na mechanizmach sygnałowych zegarów systemowych.
 - Bezpieczeństwo: zapewnienie działania tylko jednej instancji serwera w danym czasie.
+
+Kompilacja: gcc main.c cron_server.c cron_client.c logger.c -o my_cron -pthread -lrt
+Uruchomienie: ./my_cron
